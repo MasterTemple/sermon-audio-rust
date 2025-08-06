@@ -132,13 +132,13 @@ pub struct SoloSite {
     // access_level: 5
     // null: false
     #[serde(rename = "create_date")]
-    pub create_date: u32,
+    pub create_date: i64,
 
     // title: Update Date
     // access_level: 5
     // null: false
     #[serde(rename = "update_date")]
-    pub update_date: u32,
+    pub update_date: i64,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -148,7 +148,7 @@ pub struct ChurchServiceTime {
     /// access_level: 5
     /// null: false
     #[serde(rename = "serviceTypeID")]
-    pub service_type_id: u32,
+    pub service_type_id: i64,
 
     /// title: Title
     /// access_level: 5
@@ -166,7 +166,7 @@ pub struct ChurchServiceTime {
     /// access_level: 5
     /// null: false
     #[serde(rename = "dayOfWeek")]
-    pub day_of_week: u32,
+    pub day_of_week: i64,
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
@@ -301,13 +301,13 @@ pub struct BroadCaster {
     /// access_level: 5
     /// null: false
     #[serde(rename = "numberOfSermons")]
-    pub number_of_sermons: u32,
+    pub number_of_sermons: i64,
 
     /// title: Joined
     /// access_level: 5
     /// null: false
     #[serde(rename = "joined")]
-    pub joined: u32,
+    pub joined: i64,
 
     /// title: Idcode
     /// access_level: 5
@@ -429,7 +429,7 @@ pub struct BroadCaster {
     /// access_level: 5
     /// null: false
     #[serde(rename = "categories")]
-    pub categories: u32,
+    pub categories: i64,
 
     /// title: Welcomevideoid
     /// access_level: 5
@@ -476,7 +476,7 @@ pub struct BroadCaster {
     /// access_level: 5
     /// null: false
     #[serde(rename = "churchSize")]
-    pub church_size: u32,
+    pub church_size: i64,
 
     /// description:
     /// Minimum speaker information contained in LiteSermon object.
